@@ -4,8 +4,81 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>WeatherApp</title>
+		<script src="./main.js" defer></script>
 	</head>
 	<body>
-		<div id="root-container"></div>
+		<div id="root-container">
+			<header id="header-container">
+				<h1 id="topmost-header">WeatherApp</h1>
+				<span id="attribution-weatherapi">
+					Powered by
+					<a href="https://www.weatherapi.com/" title="Free Weather API">
+						WeatherAPI.com
+					</a>
+				</span>
+			</header>
+			<main id="main-container">
+				<form id="search">
+					<input
+						type="search"
+						name="searched-place"
+						id="search__input"
+						placeholder="Enter city name"
+					/>
+					<span id="search__error"></span>
+					<button type="submit" id="search__btn">Get weather</button>
+				</form>
+				<article id="output-container">
+					<div id="output-header">
+						<h2>Weather Data</h2>
+						<div id="units-container">
+							<div class="unit">
+								<input
+									type="radio"
+									name="unit"
+									id="unit__input__metric"
+									class="unit__input"
+									value="metric"
+									checked
+								/>
+								<label for="unit__input__metric" class="unit__label">Metric</label>
+							</div>
+							<div class="unit">
+								<input
+									type="radio"
+									name="unit"
+									id="unit__input__imperial"
+									class="unit__input"
+									value="imperial"
+								/>
+								<label for="unit__input__imperial" class="unit__label">
+									Imperial
+								</label>
+							</div>
+						</div>
+					</div>
+					<h3 id="output-city"></h3>
+					<div id="condition-container">
+						<span class="condition">
+							Temperature:
+							<span id="condition__temp"></span>
+						</span>
+						<span class="condition">
+							Humidity:
+							<span id="condition__humid"></span>
+						</span>
+						<span class="condition">
+							Precipitation:
+							<span id="condition__precip"></span>
+						</span>
+						<span class="condition">
+							Wind Speed:
+							<span id="condition__wind-speed"></span>
+						</span>
+					</div>
+				</article>
+			</main>
+			<footer></footer>
+		</div>
 	</body>
 </html>
