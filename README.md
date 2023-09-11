@@ -1,6 +1,8 @@
 # Overview
 
-This is a simple project where I make use of async/promises to fetch and display weather data from a third party API
+This is a simple project where I make use of async/promises to fetch and display weather data from a third party API.
+
+<h3><a href="https://yash-aryan.github.io/WeatherApp/" target="_blank">View Live Demo</a></h3>
 
 -   This is the work-in-progress GUI version of the web-app.
 -   **Utilized Webpack** for bundling together all the files used to create this project.
