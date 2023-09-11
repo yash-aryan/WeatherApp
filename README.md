@@ -11,4 +11,4 @@ This is a simple project where I make use of async/promises to fetch and display
 # Project Status
 
 -   [x] Create Basic Working GUI
--   [ ] Update UI's Visual Design
+-   [x] Update UI's Visual Design

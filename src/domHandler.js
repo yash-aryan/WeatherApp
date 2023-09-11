@@ -1,12 +1,18 @@
 'use strict';
 
 function displayWeatherData(weatherData, isMetric) {
-	const outputTempValue = document.querySelector('#condition__temp'),
+	const container = document.querySelector('#output-container'),
+		outputTempValue = document.querySelector('#condition__temp'),
 		outputHumidValue = document.querySelector('#condition__humid'),
 		outputPrecipValue = document.querySelector('#condition__precip'),
 		outputWindSpeedValue = document.querySelector('#condition__wind-speed'),
-		outputCity = document.querySelector('#output-city');
+		outputCity = document.querySelector('#output-city'),
+		outputSummaryIcon = document.querySelector('#output-summary__icon'),
+		outputSummaryText = document.querySelector('#output-summary__text');
 
+	container.classList.remove('hidden');
+	outputSummaryIcon.src = weatherData.iconPath;
+	outputSummaryText.textContent = weatherData.description;
 	outputCity.textContent = `${weatherData.city}, ${weatherData.country}`;
 	outputHumidValue.textContent = `${weatherData.humidity}%`;
 
