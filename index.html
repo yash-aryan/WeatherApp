@@ -23,14 +23,14 @@
 						type="search"
 						name="searched-place"
 						id="search__input"
-						placeholder="Enter city name"
+						placeholder="Enter city name..."
 					/>
 					<span id="search__error"></span>
-					<button type="submit" id="search__btn">Get weather</button>
+					<button type="submit" id="search__btn" class="text--small-caps">Search</button>
 				</form>
-				<article id="output-container">
+				<article id="output-container" class="hidden">
 					<div id="output-header">
-						<h2>Weather Data</h2>
+						<span id="output-header__text" class="text--small-caps">Weather Data</span>
 						<div id="units-container">
 							<div class="unit">
 								<input
@@ -39,7 +39,7 @@
 									id="unit__input__metric"
 									class="unit__input"
 									value="metric"
-									checked
+									checked=""
 								/>
 								<label for="unit__input__metric" class="unit__label">Metric</label>
 							</div>
@@ -57,28 +57,40 @@
 							</div>
 						</div>
 					</div>
-					<h3 id="output-city"></h3>
+					<h2 id="output-city"></h2>
+					<div id="output-summary">
+						<img src="" alt="Corresponding weather icon" id="output-summary__icon" />
+						<span id="output-summary__text"></span>
+					</div>
 					<div id="condition-container">
-						<span class="condition">
-							Temperature:
-							<span id="condition__temp"></span>
-						</span>
-						<span class="condition">
-							Humidity:
-							<span id="condition__humid"></span>
-						</span>
-						<span class="condition">
-							Precipitation:
-							<span id="condition__precip"></span>
-						</span>
-						<span class="condition">
-							Wind Speed:
-							<span id="condition__wind-speed"></span>
-						</span>
+						<div class="condition">
+							<span class="condition__property text--small-caps">Temperature</span>
+							<span id="condition__temp" class="condition__value"></span>
+						</div>
+						<div class="condition">
+							<span class="condition__property text--small-caps">Humidity</span>
+							<span id="condition__humid" class="condition__value"></span>
+						</div>
+						<div class="condition">
+							<span class="condition__property text--small-caps">Precipitation</span>
+							<span id="condition__precip" class="condition__value"></span>
+						</div>
+						<div class="condition">
+							<span class="condition__property text--small-caps">Wind Speed</span>
+							<span id="condition__wind-speed" class="condition__value"></span>
+						</div>
 					</div>
 				</article>
 			</main>
-			<footer></footer>
+			<footer id="footer">
+				<a href="https://github.com/yash-aryan/" target="_blank"
+					>Copyright ©
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					yash-aryan
+				</a>
+			</footer>
 		</div>
 	</body>
 </html>
