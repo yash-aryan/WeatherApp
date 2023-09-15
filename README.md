@@ -2,6 +2,8 @@
 
 This is a simple project where I make use of async/promises to fetch and display weather data from a third party API.
 
+### [View Live Demo](https://yash-aryan.github.io/WeatherApp/)
+
 -   This is the GUI version of the web-app.
 -   **Utilized Webpack** for bundling together all the files used to create this project.
 -   **Utilized WeatherAPI** for fetching weather data for different locations.
@@ -13,7 +15,4 @@ This is a simple project where I make use of async/promises to fetch and display
 -   [x] Create Basic Working GUI
 -   [x] Update UI's Visual Design
 
-<a href="https://yash-aryan.github.io/WeatherApp/" target="_blank">
-    <h3>View Live Demo</h3>
-    <img src="./example.png" width="700" />
-</a>
+<img src="./example.png" width="700" alt="Example screenshot of web-app" />
