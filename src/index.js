@@ -60,7 +60,7 @@ async function fetchWeatherData(locationQuery) {
 
 		if (response.status === 200) {
 			const responseObj = await response.json();
-			extractWeatherData(responseObj);
+			extractFromResponseObj(responseObj);
 			return currCityWeatherData;
 		} else throw Error('Response Not OK');
 	} catch (err) {
@@ -82,11 +82,10 @@ async function fetchWeatherData(locationQuery) {
 		return null;
 	}
 
-	function extractWeatherData(responseObj) {
+	function extractFromResponseObj(responseObj) {
 		currCityWeatherData.city = responseObj.location.name;
 		currCityWeatherData.country = responseObj.location.country;
-		const pathString = responseObj.current.condition.icon.split('/').slice(3).join('/');
-		currCityWeatherData.iconPath = `../src/${pathString}`;
+		currCityWeatherData.iconPath = responseObj.current.condition.icon;
 		currCityWeatherData.description = responseObj.current.condition.text;
 		currCityWeatherData.temp_c = responseObj.current.temp_c;
 		currCityWeatherData.temp_f = responseObj.current.temp_f;

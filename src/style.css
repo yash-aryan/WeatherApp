@@ -107,6 +107,7 @@ body {
 	background-color: var(--primary-500);
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 	border: 0;
+	cursor: pointer;
 }
 #search__btn:hover {
 	filter: brightness(1.5);
