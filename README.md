@@ -13,4 +13,7 @@ This is a simple project where I make use of async/promises to fetch and display
 -   [x] Create Basic Working GUI
 -   [x] Update UI's Visual Design
 
-<a href="https://yash-aryan.github.io/WeatherApp/" target="_blank"><h3>View Live Demo</h3><img src="./example.png" width="500"></img></a>
+<a href="https://yash-aryan.github.io/WeatherApp/" target="_blank">
+    <h3>View Live Demo</h3>
+    <img src="./example.png" width="700" />
+</a>
